@@ -22,9 +22,9 @@
 Дизайн на усмотрение каждого.
 Цветовую палитру можно выбрать от сюда https://material.io/guidelines/style/color.html
 
-БЭМ-методология классов https://ru.bem.info/methodology/naming-convention/
-Ссылка на презентацию https://docs.google.com/presentation/d/1krV5xavIO9LUUtXuhFo8k67dhnwkKqhg8tvqUcwVyvw/edit?usp=sharing
-Рекомендуемый справочник http://htmlbook.ru/
+- БЭМ-методология классов https://ru.bem.info/methodology/naming-convention/
+- Ссылка на презентацию https://docs.google.com/presentation/d/1krV5xavIO9LUUtXuhFo8k67dhnwkKqhg8tvqUcwVyvw/edit?usp=sharing
+- Рекомендуемый справочник http://htmlbook.ru/
 
 
 Для продвинутых:
