@@ -1,0 +1,192 @@
+include ../node_modules/bemto.jade/bemto
+
+doctype html
+html(lang="en")
+	head
+		title
+			| test
+		link(rel="stylesheet", href="assets/style/style.css")
+	body
+		+b('header').header
+			+b('div').container
+				+b('div').btn-group.flt-l
+					+e('span').item
+						| Добавить
+					+e('span').item
+						| Обновить
+				+b('form').form.flt-r
+					+b('div').form-control
+						+e('label').label._icon-search
+							+e('input').input(type="search", placeholder="Событие, дата или участник")
+		+b('main').main
+			+b('div').container
+				+b('div').calendar
+					+b('div').calendar-nav
+						+e('span').prev
+						+e('time').date
+							| Март 2013
+						+e('span').next
+						+e('span').to-day
+							| Сегодня
+					+b('div').calendar-body
+						+b('div').calendar-week
+							+b('div').calendar-week-day
+								+e('div').title
+									| Понедельник, 28
+							+b('div').calendar-week-day
+								+e('div').title
+									| Вторник, 29
+							+b('div').calendar-week-day
+								+e('div').title
+									| Среда, 30
+							+b('div').calendar-week-day
+								+e('div').title
+									| Четверг, 31
+							+b('div').calendar-week-day
+								+e('div').title
+									| Пятница, 1
+							+b('div').calendar-week-day._to-day
+								+e('div').title
+									| Суббота, 2
+							+b('div').calendar-week-day
+								+e('div').title
+									| Воскресение, 3
+						+b('div').calendar-week
+							+b('div').calendar-week-day
+								+e('div').title
+									| 1
+							+b('div').calendar-week-day
+								+e('div').title
+									| 2
+							+b('div').calendar-week-day._acive
+								+e('div').title
+									| 3
+								+b('div').calendar-week-day-event
+									+e('div').name
+										| ДР
+									+e('div').desc
+										| День рождение Вити. Гуляем в ресторане!
+							+b('div').calendar-week-day
+								+e('div').title
+									| 4
+							+b('div').calendar-week-day
+								+e('div').title
+									| 5
+							+b('div').calendar-week-day
+								+e('div').title
+									| 6
+							+b('div').calendar-week-day
+								+e('div').title
+									| 7
+						+b('div').calendar-week
+							+b('div').calendar-week-day
+								+e('div').title
+									| 8
+							+b('div').calendar-week-day
+								+e('div').title
+									| 9
+							+b('div').calendar-week-day
+								+e('div').title
+									| 10
+							+b('div').calendar-week-day
+								+e('div').title
+									| 11
+							+b('div').calendar-week-day
+								+e('div').title
+									| 12
+							+b('div').calendar-week-day
+								+e('div').title
+									| 13
+							+b('div').calendar-week-day
+								+e('div').title
+									| 14
+						+b('div').calendar-week
+							+b('div').calendar-week-day
+								+e('div').title
+									| 15
+							+b('div').calendar-week-day
+								+e('div').title
+									| 16
+							+b('div').calendar-week-day
+								+e('div').title
+									| 17
+							+b('div').calendar-week-day
+								+e('div').title
+									| 18
+							+b('div').calendar-week-day
+								+e('div').title
+									| 19
+							+b('div').calendar-week-day
+								+e('div').title
+									| 20
+							+b('div').calendar-week-day
+								+e('div').title
+									| 21
+						+b('div').calendar-week
+							+b('div').calendar-week-day
+								+e('div').title
+									| 22
+							+b('div').calendar-week-day
+								+e('div').title
+									| 23
+							+b('div').calendar-week-day
+								+e('div').title
+									| 24
+							+b('div').calendar-week-day
+								+e('div').title
+									| 25
+							+b('div').calendar-week-day
+								+e('div').title
+									| 26
+							+b('div').calendar-week-day
+								+e('div').title
+									| 27
+							+b('div').calendar-week-day
+								+e('div').title
+									| 28
+						+b('div').calendar-week
+							+b('div').calendar-week-day
+								+e('div').title
+									| 29
+							+b('div').calendar-week-day
+								+e('div').title
+									| 30
+							+b('div').calendar-week-day
+								+e('div').title
+									| 31
+							+b('div').calendar-week-day
+								+e('div').title
+									| 1
+							+b('div').calendar-week-day
+								+e('div').title
+									| 2
+							+b('div').calendar-week-day
+								+e('div').title
+									| 3
+							+b('div').calendar-week-day
+								+e('div').title
+									| 4
+				//- +b('div').modal
+				//- 	+e('span').close
+				//- 	+b('form').form
+				//- 		+b('div').form-control
+				//- 			+e('input').input(type="text", placeholder="12 марта, 14:00, День рождение")
+				//- 		+b('div').form-control
+				//- 			+e('button').button(type="button")
+				//- 				| Создать
+				//- +b('div').modal
+				//- 	+e('span').close
+				//- 	+b('form').form
+				//- 		+b('div').form-control
+				//- 			+e('input').input(type="text", placeholder="События")
+				//- 		+b('div').form-control
+				//- 			+e('input').input(type="text", placeholder="День, месяц, год")
+				//- 		+b('div').form-control
+				//- 			+e('input').input(type="text", placeholder="Имена участников")
+				//- 		+b('div').form-control
+				//- 			+e('textarea').textarea(rows="10", placeholder="Оисание")
+				//- 		+b('div').form-control
+				//- 			+e('button').button(type="button")
+				//- 				| Создать
+				//- 			+e('button').button(type="button")
+				//- 				| Удалить

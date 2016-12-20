@@ -1,0 +1,75 @@
+include ../../node_modules/bemto.jade/bemto
+
+- var nameDays = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];
+- var i = 1;
+- var j = 1;
+- var n = 1;
+
+doctype html
+html(lang='ru')
+  head
+    title
+      | Example 1
+    link(href='public/css/styles.css' rel='stylesheet')
+    meta(charset="utf-8")
+  
+  body
+    +b('div').container
+      +b('div').panel
+        +b('form').form(
+          'action'='#',
+          'method'='POST'
+        )
+          +e('fieldset').fild
+            +e('textarea').txt(
+              'placeholder'='Введите заметку',
+              'rows'='6'
+            )
+          +e('fieldset').fild
+            +e('input').inpt(
+              'type'='date',
+              'placeholder'='Введите дату'
+            )
+            +e('input').inpt(
+              'type'='time',
+              'placeholder'='Введите время'
+            )
+            +e('button').btn(
+              'type'='submit'
+            ) Добавить
+      +b('table').table
+        +e('thead').header
+          +e('tr').row
+            each value in nameDays
+              +e('th').field= value
+        +e('tbody').body
+          while i <= 6
+            +e('tr').row
+              while j <= 7
+                +e('td').field= j++
+              if i == 2
+                while j <= 14
+                  +e('td').field= j++
+              if i == 3
+                while j <= 21
+                  +e('td').field= j++
+              if i == 4
+                while j <= 28
+                  +e('td').field= j++
+              if i == 5
+                while j <= 35
+                  if j <= 31
+                    +e('td').field= j++
+                  else
+                    +e('td').field= n++
+                    - j++;
+              if i == 6
+                while j <= 42
+                  +e('td').field= n++
+                  - j++;
+            - i++;
+        +e('tfoot').footer
+          +e('tr').row
+            +e('td').field(
+              'colspan'='7'
+            ) footer

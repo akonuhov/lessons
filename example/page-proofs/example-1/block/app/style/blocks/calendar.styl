@@ -1,0 +1,103 @@
+.calendar
+	position relative
+	width 100%
+	height auto
+
+	&-nav
+		margin-y(20px)
+		width 100%
+
+		&__prev, &__next, &__to-day
+			padding 2px 10px
+			font-size 12px
+			border-style solid
+			border-color #ebebeb
+			border-width 2px
+			border-radius 4px
+			cursor pointer
+
+		&__prev
+			background-image url('../images/icon-svg/icon-arrow-left.svg')
+			background-repeat no-repeat
+			background-size contain
+
+		&__next
+			background-image url('../images/icon-svg/icon-arrow-right.svg')
+			background-repeat no-repeat
+			background-size contain
+
+		&__to-day
+			margin-left 10px
+
+		&__date
+			margin-x(10px)
+			font-weight 600
+
+	&-header
+		width 100%
+
+	&-body
+		display table
+		width 100%
+		overflow hidden
+
+	&-week
+		display table-row
+		width 100%
+
+		&:last-child
+
+			.calendar-week-day
+				border-bottom-width 1px
+
+		&-day
+			position relative
+			display table-cell
+			width 14.28%
+			height 146px
+			vertical-align top
+			border-style solid
+			border-color #ebebeb
+			border-top-width 1px
+			border-right-width 0
+			border-bottom-width 0
+			border-left-width 1px
+
+			&:last-child
+				border-right-width 1px
+
+			&:hover
+				background-color rgba(194, 228, 254, .6)
+				border-color activeColor
+
+				& + div
+					border-left-color activeColor
+
+			&_acive
+				background-color rgba(194, 228, 254, 1)
+				border-color activeColor
+
+				& + div
+					border-left-color activeColor
+
+			&_to-day
+				background-color defaultColor
+
+			&__title
+				padding 8px
+				font-size 12px
+				text-align left
+				color textColor
+
+			&-event
+				padding-x(8px)
+
+				&__name
+					margin-bottom 4px
+					font-size 12px
+					font-weight 600
+					color textColor
+
+				&__desc
+					font-size 12px
+					color textColor

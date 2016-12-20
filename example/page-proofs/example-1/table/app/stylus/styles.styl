@@ -1,0 +1,101 @@
+html
+  height: 100%
+  font-family: monospace
+  font-size: 1rem
+
+body
+  margin: 0
+  padding: 0
+  min-height: 100%
+  height: 100%
+  font-size: 1rem
+  line-height: 1
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+
+.container
+  margin-left: auto
+  margin-right: auto
+  padding-left: 10px
+  padding-right: 10px
+  max-width: 1004px
+
+.form
+  padding-top: 20px
+  padding-bottom: 20px
+
+  &__fild
+    display: inline-block
+    vertical-align: top
+    margin-left: 0
+    margin-right: 10px
+    margin-top: 0
+    margin-bottom: 0
+    padding: 0
+    width: 200px
+    border-width: 0
+    border-style: none
+    border-color: transparent
+
+    &:last-child {
+      margin-right: 0
+    }
+
+  &__inpt
+    margin-bottom: 10px
+    width: 100%
+    box-sizing: border-box
+
+  &__txt
+    width: 100%
+    box-sizing: border-box
+
+  &__btn
+    padding: 4px 8px
+    box-sizing: border-box
+
+.table
+  width: 100%
+  border-spacing: 0
+  border-width: 0
+  border-style: none
+  border-color: transparent
+
+  &__field
+    width: (100 / 7) * 1%
+    padding: 6% 0
+    font-size: 1rem
+    text-align: center
+    color: #E0F2F1
+    border-left-width: 1px
+    border-right-width: 0
+    border-top-width: 1px
+    border-bottom-width: 0
+    border-style: solid
+    border-color: #009688
+
+  &__header &__field
+    font-size: 1.2rem
+    border-left-color: #E0F2F1
+    background-color: #009688
+
+    &:first-child
+      border-left-color: #009688
+
+    &:last-child
+      border-right-width: 1px
+      border-right-color: #009688
+
+  &__body &__row &__field
+    color: #26A69A
+    background-color: #E0F2F1
+
+    &:last-child
+      border-right-width: 1px
+      border-right-color: #009688
+
+  &__footer &__field:last-child
+    border-right-color: #009688
+    border-bottom-width: 1px
+    border-bottom-color: #009688
+    background-color: #009688
