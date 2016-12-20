@@ -2,6 +2,8 @@
 
 Необходимо сверстать календарь и форму добавления события по дате.
 
+- Ссылка на презентацию https://docs.google.com/presentation/d/1krV5xavIO9LUUtXuhFo8k67dhnwkKqhg8tvqUcwVyvw/edit?usp=sharing
+
 Календарь необходимо сверстать двумя способами:
   - при помощи таблицы
   - при помощи блоков с использованием display: table
@@ -23,7 +25,6 @@
 Цветовую палитру можно выбрать от сюда https://material.io/guidelines/style/color.html
 
 - БЭМ-методология классов https://ru.bem.info/methodology/naming-convention/
-- Ссылка на презентацию https://docs.google.com/presentation/d/1krV5xavIO9LUUtXuhFo8k67dhnwkKqhg8tvqUcwVyvw/edit?usp=sharing
 - Рекомендуемый справочник http://htmlbook.ru/
 
 
