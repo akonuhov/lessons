@@ -1,0 +1,50 @@
+include ../bemto/bemto.pug
+- var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+- var cnt = 0;
+- var weekcnt = 5;
+
+doctype html
+html
+  head
+    title Table
+    meta(http-equiv="Content-Type" content="text/html" charset='utf-8')
+    link(href="style.css" rel = "stylesheet" type="text/css")
+  body
+    +b('header') Calendar
+    +b('div').wrapper
+      +b('div').panel
+        +b('form').form('action'='#', 'method'='POST')
+          +e('fieldset').field
+            +e('textarea').txt('placeholder'='type something here')
+          +e('fieldset').field
+            +e('input').inpdate('type' = 'date' 'name' = 'date' 'placeholder' = 'enter data')
+            +e('input').inptime('type' = 'time' name = 'time' 'placeholder' = 'enter time')
+            +e('input').add('type' = 'submit' 'name' = 'add' 'value' = 'add')
+      +b('table').caltbl
+        +e('thead').head
+          +e('tr').days
+            for day in days
+              +e('th').day= day
+        +e('tfoot').foot
+          +e('tr').week
+            +e('td').daynum
+        +e('tbody').body
+          -var k = 0;
+          -for (var i = 0; i < weekcnt; i++) {
+              +e('tr').week
+                -for (var j = cnt; j < cnt+7; j++) {
+                  -if (j > 30)  {
+                      +e('td').daynum
+                        +e('div').date= k+1
+                        +e('div').info=" info"
+                      -k++;
+                  -}
+                  -else {
+                    +e('td').daynum
+                      +e('div').date= j+1
+                      +e('div').info=" info"
+                  -}
+                -} 
+              -cnt+=7; 
+          -}
+    +b('footer')

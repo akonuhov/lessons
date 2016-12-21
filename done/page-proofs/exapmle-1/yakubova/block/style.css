@@ -1,0 +1,127 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #efefef;
+	font-family: serif;
+}
+
+header {
+	padding: 1%;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	height: 100%;
+	background-color: #efefef;
+}
+
+.panel {
+}
+
+.form {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.form__field {
+	display: block;
+	border-style: none;
+}
+
+
+.form__txt {
+	width: 35%;
+	margin: 1%;
+	padding: 5px;
+}
+
+.form__inpdate {
+	margin: 1%;
+	padding: 3px;
+}
+
+.form__inptime {
+	margin: 1%;
+	padding: 3px;
+}
+
+.form__add {
+	padding: 5px;
+	margin-left: 10px;
+	border: 2px solid grey;
+	border-radius: 5px;
+	background-color: #f0cdcd;
+}
+
+.form__add:hover {
+	background-color: #fafafa;
+}
+
+.caltbl{
+	display: table;
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border: 2px solid silver;
+}
+
+.caltbl__head {
+	display: table-header-group;
+}
+
+.caltbl__day {
+	display: table-cell;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #f0cdcd;
+	border: 3px solid #fafafa;
+	width: 13%;
+	text-align: center;
+}
+.caltbl__days {
+	display: table-row;
+}
+
+.caltbl__body {
+	width: 100%;
+	display: table-row-group;
+}
+
+.caltbl__week {
+	display: table-row;
+	width: 100%;
+}
+
+.caltbl__daynum{
+	display: table-cell;
+	width: 13%;
+	border: 3px solid #fafafa;
+	background-color: #fcecec;
+}
+
+.caltbl__date {
+	padding: 5px;
+	font-size: 1.2em;
+	text-align: left;
+	color: silver;
+	font-weight: bold;
+}
+
+.caltbl__info {
+	padding-bottom: 5px;
+	text-align: center;
+	font-size: 1em;
+	padding: 30%;
+}
+
+.caltbl__foot {
+	display: table-footer-group;
+}
