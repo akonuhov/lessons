@@ -1,0 +1,82 @@
+h1{
+    text-align: center;
+}
+
+form {
+    width: 840px;
+    margin: 50px auto;
+}
+
+table, .table_month {
+    border-collapse: collapse;
+    margin: 50px auto;
+    min-width: 840px;
+}
+
+td, th, .table_month__row div {
+    height: 80px;
+    width: 120px;
+    text-align: center;
+    color: #AA00FF;
+    border: solid #AA00FF 1px;
+}
+
+th, .table_month__header div {
+    font-family: "Baloo Thambi";
+    font-style: normal;
+    font-weight: 400;
+    font-size: larger;
+    color: #FFF;
+    background: #AA00FF; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#AA00FF, #FFF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#AA00FF, #FFF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#AA00FF, #FFF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#AA00FF, #FFF); /* Standard syntax (must be last) */
+}
+
+td, .table_month__body .table_month__row div{
+    font-family: "Mirza";
+    font-weight: 700;
+    font-style: normal;
+    font-size: xx-large;
+    background: #FFF;
+}
+
+.table_month {
+    display: table;
+}
+
+.table_month__header {
+    display: table-header-group;
+}
+
+.table_month__body {
+    display: table-row-group;
+}
+
+.table_month__row {
+    display: table-row;
+}
+
+.table_month__row div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cell__not_current_month, .table_month__body .table_month__row .cell__not_current_month{
+    color: #2196F3;
+    background: #BBDEFB;
+}
+
+.cell__weekend, .table_month__body .table_month__row .cell__weekend{
+    color: #F00;
+    background: #BBDEFB;
+}
+
+.form__item, .form__button {
+    margin: 10px 5px;
+}
+
+.form__button {
+    display: block;
+}
