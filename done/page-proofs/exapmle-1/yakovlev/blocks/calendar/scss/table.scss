@@ -1,0 +1,38 @@
+$border: 1px solid #000000;
+$widthBlock: 13%;
+.table {
+  position: relative;
+  width: 100%;
+
+  .table_header {
+    width: 100%;
+    .th {
+      border: $border;
+      text-align: center;
+    }
+  }
+
+  .table_body {
+    margin: 0px;
+    padding: 0px;
+    .tr {
+      display: block;
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+      .td {
+        border: $border;
+        display: inline-block;
+        width: $widthBlock;
+        height: 100px;
+        text-align: center;
+      }
+    }
+  }
+
+  .row > div {
+
+    width: $widthBlock;
+    display: inline-block;
+  }
+}
