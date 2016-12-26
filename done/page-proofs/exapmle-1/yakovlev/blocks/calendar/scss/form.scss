@@ -1,0 +1,18 @@
+$form_margin: 5px;
+#frmcalendar{
+  fieldset{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px;
+    border: 0px;
+
+    input,text,button{
+      margin: $form_margin;
+    }
+
+    button{
+      display: block;
+    }
+
+  }
+}

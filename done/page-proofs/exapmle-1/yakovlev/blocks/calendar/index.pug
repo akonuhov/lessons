@@ -1,0 +1,27 @@
+- var weekDays = ["Понедельник" , "Вторник" , "Среда" , "Четверг" , "Пятница" , "Суббота" , "Воскресенье"]
+- var maxDay = 31
+- var weakDays = 7
+- var currentDay = 1
+
+div.content
+    div.row.panel
+        form#frmcalendar
+            fieldset
+                textarea(placeholder="Введите заметку", rows=4)
+            fieldset
+                input(type="date")
+                input(type="time")
+                button(type="submit") Send
+    div.row.table
+        div.row.table_header
+            each day in weekDays
+                div.th= day
+        div.row.table_body
+            - for (var x = 0; x <= (Math.round(maxDay/7)); x++)
+                div.tr
+                    - for (var y = 0; y < weakDays; y++)
+                        if currentDay>maxDay
+                            div.td
+                                | &nbsp
+                        else
+                            div.td #{currentDay++}
