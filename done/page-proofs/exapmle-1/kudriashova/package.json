@@ -1,0 +1,36 @@
+{
+  "name": "project.dev",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel scss/js -d res/js --presets-es2015",
+    "watch": "babel scss/js -d res/js --presets-es2015 -w"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-css-sprite": "0.0.9",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-sass": "^2.3.1",
+    "gulp-sprite-generator": "^0.2.3",
+    "gulp-svg-sprite": "^1.3.3",
+    "gulp-useref": "^3.1.0",
+    "run-sequence": "^1.2.1"
+  },
+  "dependencies": {
+    "gulp-svg-sprite": "^1.3.3"
+  },
+  "keywords": [],
+  "description": ""
+}
